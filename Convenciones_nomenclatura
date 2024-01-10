@@ -1,0 +1,37 @@
+# Ejemplo de Area de una figura en Python
+
+# Clases: CamelCase (cada palabra comienza con mayúscula)
+
+# Buen identificador para una variable que almacena el area de una figura en una clase
+class Superficie:
+    def __init__(self, forma, lados):
+        self.forma = forma
+        self.lados = lados
+
+    def mostrar_informacion(forma, lados):
+        return f"Superficie: {self.forma} {self.lados}"
+
+
+# Funciones y variables: snake_case (palabras separadas por guiones bajos)
+
+# Buen identificador para una función que calcula el area
+def calcular_area(lado, lado):
+    return lado * lado
+
+# Constantes: MAYUSCULAS con guiones bajos
+
+# Buen identificador para una variable que indica la longitud de cada lado
+LONGITUD_LADOS = 2
+
+
+# Instancia de la clase
+mi_tesla = Superficie("Tesla", "Cuadrado")
+
+# Llamada a función
+area = calcular_area(2.0, LONGITUD_LADOS)
+
+
+# Uso de los identificadores en un contexto de código
+
+print(mi_tesla.mostrar_informacion(forma, lados))
+print(f"Area: {area} cm^2")
